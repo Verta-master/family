@@ -1,0 +1,129 @@
+.calc {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: #b7da7a;
+}
+
+.calc__form {
+  padding: 10px 20px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.calc__title {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  
+  p {
+    margin: 0;
+    font-family: "Roboto", "Arial", sans-serif;
+    font-size: 20px;
+    color: #223303;
+    letter-spacing: 0.023em;
+  }
+}
+
+.calc__icon {
+  position: relative;
+  margin-bottom: 25px;
+  
+  i {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    opacity: 0.7;
+  }
+}
+
+.calc__date,
+.calc__select {
+  display: block;
+  width: 365px;
+  height: 40px;
+  padding: 0 10px;
+  font-size: 18px;
+  border: 1px solid #bcbcbc;
+  outline: none;
+}
+
+.calc__select {
+  color: @pink;
+}
+
+.calc__select-label {
+  display: block;
+  font-size: 14px;
+  text-align: center;
+}
+
+.calc__options {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.calc__radio {
+  display: none;
+}
+
+.calc__btn {
+  width: 234px;
+  height: 47px;
+  margin-top: 50px;
+  margin-left: auto;
+  letter-spacing: 0.01em;
+  
+  i {
+    margin-right: 10px;
+  }
+}
+
+.calc__label {
+  position: relative;
+  display: block;
+  margin-bottom: 30px;
+  padding-left: 30px;
+  font-size: 14px;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #bcbcbc;
+  }
+  
+  &::after {
+    display: none;
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #4c4c4c;
+  }
+}
+
+.calc__radio:checked + .calc__label::after {
+  display: block;
+}
+
+.calc__block {
+  position: relative;
+  max-width: 240px;
+  padding-top: 10px;
+  
+  &--icons {
+    padding-left: 50px;
+    background-image: url(../img/icons.png);
+    background-repeat: no-repeat;
+    background-size: 40px 150px;
+    background-position: left top;
+  }
+}

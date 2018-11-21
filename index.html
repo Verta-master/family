@@ -338,7 +338,7 @@
     </section>
     
     <section class="personal">
-      <div class="wrapper">
+      <div class="wrapper personal__wrap">
         <p class="title">Наш персонал</p>
         <div class="swiper-container personal__slider">
           <div class="swiper-wrapper">
@@ -378,16 +378,17 @@
               <p>Патронажная сестра</p>
             </div>
           </div>
-          <div class="swiper-button-prev personal__prev"></div>
-          <div class="swiper-button-next personal__next"></div>
         </div>
+        <div class="swiper-button-prev personal__prev"></div>
+        <div class="swiper-button-next personal__next"></div>
       </div>
     </section>
     
     <section class="catalog">
       <div class="wrapper catalog__wrap">
-        <p class="catalog__text"><i class="fa fa-map-marker-alt"></i>Используйте наш каталог для поиска пансионата в любой части Москвы</p>
-        <a href="#" class="btn catalog__btn">Каталог <i class="fa fa-chevron-right"></i></a>
+        <i class="fa fa-map-marker-alt"></i>
+        <p>Используйте наш каталог<br>для поиска пансионата в любой части Москвы</p>
+        <a href="#" class="btn catalog__btn">Каталог</a>
       </div>
     </section>
     
@@ -400,7 +401,7 @@
         <form action="#" class="calc__form">
           <div class="calc__title">
             <p>Рассчитать конечную стоимость</p>
-            <div class="calc__icon">
+            <div class="calc__select-wrap">
               <select id="select" class="calc__select">
                 <option value="1">Пансионат для пожилых в Бутово</option>
                 <option value="2">Пансионат для пожилых в Бутово</option>
@@ -410,27 +411,27 @@
           </div>
           <p><strong>Факторы влияющие на конечную стоимость</strong></p>
           <div class="calc__options">
-            <div class="calc__block">
-              <input type="radio" id="radio1" name="radio1" class="calc__radio">
-              <input type="radio" id="radio2" name="radio1" class="calc__radio">
-              <input type="radio" id="radio3" name="radio1" class="calc__radio">
+            <div class="calc__block calc__block--icons">
+              <input type="radio" id="radio1" name="radio1" class="calc__radio" checked>
               <label for="radio1" class="calc__label calc__label--1">Самостоятельно передвигающийся</label>
+              <input type="radio" id="radio2" name="radio1" class="calc__radio">
               <label for="radio2" class="calc__label calc__label--2">Лежачий больной</label>
+              <input type="radio" id="radio3" name="radio1" class="calc__radio">
               <label for="radio3" class="calc__label calc__label--3">Инвалид колясочник</label>
             </div>
             <div class="calc__block">
-              <input type="radio" id="radio1" name="radio2" class="calc__radio">
-              <input type="radio" id="radio2" name="radio2" class="calc__radio">
-              <input type="radio" id="radio3" name="radio2" class="calc__radio">
-              <input type="radio" id="radio4" name="radio2" class="calc__radio">
+              <input type="radio" id="radio4" name="radio2" class="calc__radio" checked>
+              <label for="radio4" class="calc__label calc__label--4">Адекватное состояние</label>
               <input type="radio" id="radio5" name="radio2" class="calc__radio">
-              <label for="radio1" class="calc__label calc__label--4">Адекватное состояние</label>
-              <label for="radio2" class="calc__label calc__label--5">Альцгеймер</label>
-              <label for="radio3" class="calc__label calc__label--6">Проблемы с памятью</label>
-              <label for="radio4" class="calc__label calc__label--7">Деменция</label>
-              <label for="radio5" class="calc__label calc__label--8">Другое</label>
+              <label for="radio5" class="calc__label calc__label--5">Альцгеймер</label>
+              <input type="radio" id="radio6" name="radio2" class="calc__radio">
+              <label for="radio6" class="calc__label calc__label--6">Проблемы с памятью</label>
+              <input type="radio" id="radio7" name="radio2" class="calc__radio">
+              <label for="radio7" class="calc__label calc__label--7">Деменция</label>
+              <input type="radio" id="radio8" name="radio2" class="calc__radio">
+              <label for="radio8" class="calc__label calc__label--8">Другое</label>
             </div>
-            <div class="calc__block">
+            <div class="calc__dates">
               <div class="calc__icon">
                 <input type="text" class="calc__date" placeholder="Дата заезда">
                 <i class="fa fa-calendar-alt"></i>
