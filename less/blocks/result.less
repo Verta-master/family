@@ -1,0 +1,94 @@
+.result {
+  padding-top: 1px;
+  padding-bottom: 60px;
+  background-color: #ececec;
+}
+
+.result__slider {
+  padding-left: 25px;
+  padding-right: 25px;
+}
+
+.result__slide {
+  width: 448px;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.result__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.result__img {
+  width: 125px;
+  height: 125px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.result__info {
+  width: 245px;
+  color: #2a2924;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+}
+
+.result__name {
+  margin-top: 10px;
+  margin-bottom: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.result__positive {
+  color: @green;
+}
+
+.result__prev,
+.result__next {
+  width: 25px;
+  height: 100%;
+  background-color: #ececec;
+  background-image: url(../img/icon-arrow-green.png);
+  background-size: 17px 26px;
+  outline: none;
+  transform: none;
+  top: 0;
+  margin-top: 0;
+}
+
+.result__prev {
+  left: 0;
+  transform: rotate(180deg);
+  background-position: left center;
+}
+
+.result__next {
+  right: 0;
+  background-position: right center;
+}
+
+.result__output {
+  padding: 20px;
+  color: #fff;
+  font-size: 14px;
+  letter-spacing: 0.025em;
+  background-color: @green;
+  
+  p {
+    margin: 0;
+    margin-bottom: 5px;
+  }
+}
+
+.result__title {
+  font-size: 20px;
+}

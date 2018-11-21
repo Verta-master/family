@@ -130,29 +130,40 @@
     
     <section class="program wrapper">
       <p class="title">Восстановительные программы для пожилых после инсульта и операций</p>
-      <ul class="program__list">
-        <li class="program__item">
-          <figure class="program__img">
-            <img src="img/img-3.jpg" alt="Восстановление моторики после инсульта" width="315" height="393">
-          </figure>
-          <p class="program__title">Восстановление моторики после инсульта</p>
-          <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
-        </li>
-        <li class="program__item">
-          <figure class="program__img">
-            <img src="img/img-4.jpg" alt="Восстановление речи после инсульта" width="399" height="298">
-          </figure>
-          <p class="program__title">Восстановление речи после инсульта</p>
-          <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
-        </li>
-        <li class="program__item">
-          <figure class="program__img">
-            <img src="img/img-5.jpg" alt="Оздоровительная программа после инсульта" width="600" height="450">
-          </figure>
-          <p class="program__title">Оздоровительная программа после инсульта</p>
-          <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
-        </li>
-      </ul>
+      <div class="swiper-container program__slider">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide program__slide">
+            <figure class="program__img">
+              <img src="img/img-3.jpg" alt="Восстановление моторики после инсульта" width="315" height="393">
+            </figure>
+            <p class="program__title">Восстановление моторики после инсульта</p>
+            <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="swiper-slide program__slide">
+              <figure class="program__img">
+                <img src="img/img-4.jpg" alt="Восстановление речи после инсульта" width="399" height="298">
+              </figure>
+              <p class="program__title">Восстановление речи после инсульта</p>
+              <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="swiper-slide program__slide">
+            <figure class="program__img">
+              <img src="img/img-5.jpg" alt="Оздоровительная программа после инсульта" width="600" height="450">
+            </figure>
+            <p class="program__title">Оздоровительная программа после инсульта</p>
+            <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+          <div class="swiper-slide program__slide">
+            <figure class="program__img">
+              <img src="img/img-3.jpg" alt="Восстановление моторики после инсульта" width="315" height="393">
+            </figure>
+            <p class="program__title">Восстановление моторики после инсульта</p>
+            <a href="#" class="program__link">Подробнее <i class="fa fa-arrow-circle-right"></i></a>
+          </div>
+        </div>
+        <div class="swiper-button-prev program__prev"></div>
+        <div class="swiper-button-next program__next"></div>
+      </div>
     </section>
     
     <section class="result">
@@ -184,6 +195,23 @@
                 </figure>
                 <div class="result__info">
                   <p class="result__name">Ольга Ивановна</p>
+                  <p class="result__positive"><i class="fa fa-home"></i> Perspiciatis unde omnis iste</p>
+                  <p class="result__negative"><i class="fa fa-briefcase-medical"></i> Perspiciatis unde omnis iste</p>
+                  <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
+                </div>
+              </div>
+              <div class="result__output">
+                <p class="result__title">Результат:</p>
+                <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo </p>
+              </div>
+            </div>
+            <div class="swiper-slide result__slide">
+              <div class="result__wrap">
+                <figure class="result__img">
+                  <img src="img/photo-1.jpg" alt="Степан Петрович" width="125" height="125">
+                </figure>
+                <div class="result__info">
+                  <p class="result__name">Степан Петрович</p>
                   <p class="result__positive"><i class="fa fa-home"></i> Perspiciatis unde omnis iste</p>
                   <p class="result__negative"><i class="fa fa-briefcase-medical"></i> Perspiciatis unde omnis iste</p>
                   <p>Perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi</p>
@@ -574,6 +602,18 @@
       preventClicksPropagation: false,
       slidesPerView: 'auto',
       spaceBetween: 40,
+    });
+    
+    var mySwiper = new Swiper ('.program__slider', {
+      navigation: {
+        nextEl: '.program__next',
+        prevEl: '.program__prev',
+      },
+      simulateTouch: false,
+      preventClicks: false,
+      preventClicksPropagation: false,
+      slidesPerView: 'auto',
+      spaceBetween: 5,
     });
   </script>
   
