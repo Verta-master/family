@@ -1,0 +1,71 @@
+.photo__slider {
+  .swiper-slide {
+    opacity: 0.21;
+  }
+  .swiper-slide-active {
+    opacity: 1;
+  }
+}
+
+.photo__slide {
+  width: 960px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  box-sizing: border-box;
+}
+
+.photo__link {
+  height: 280px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  
+  img {
+    display: block;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    object-fit: cover;
+  }
+  
+  &:first-of-type {
+    width: 360px;
+    margin-bottom: 5px;
+  }
+  &:nth-of-type(2) {
+    width: 595px;
+    margin-bottom: 5px;
+  }
+  &:nth-of-type(3),
+  &:nth-of-type(4) {
+    width: 300px;
+  }
+  &:nth-of-type(5) {
+    width: 350px;
+  }
+}
+
+.photo__prev,
+.photo__next {
+  width: 49px;
+  height: 49px;
+  top: 50%;
+  background-color: rgba(255,255,255,0.92);
+  border-radius: 50%;
+  background-image: url(../img/icon-arrow-green.png);
+  background-size: 17px 26px;
+  background-position: center;
+  outline: none;
+}
+
+.photo__prev {
+  transform: rotate(180deg);
+  left: ~"calc(50% - 545px)";
+}
+
+.photo__next {
+  right: ~"calc(50% - 545px)";
+}
