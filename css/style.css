@@ -1605,3 +1605,257 @@ button {
           transform: scaleX(-1);
   margin-right: 10px;
 }
+@media (max-width: 1200px) {
+  .photo__prev {
+    left: 0;
+  }
+  .photo__next {
+    right: 0;
+  }
+}
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .header__top {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .header__contacts {
+    margin-left: auto;
+    padding-top: 0;
+  }
+  .header__info {
+    margin-right: 0;
+  }
+  .header__call {
+    margin-top: 0;
+  }
+  .menu__btn {
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-image: url(../img/icon-menu-ham.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+  }
+  .menu__list {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: #699c11;
+  }
+  .menu {
+    position: relative;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .menu--opened .menu__btn {
+    background-image: url(../img/icon-menu-cross.svg);
+    background-size: 20px 20px;
+  }
+  .menu__link {
+    padding: 10px 15px;
+    text-align: center;
+    font-size: 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+  }
+  .menu__item:hover .menu__sublist {
+    display: none;
+  }
+  .program__slider {
+    width: 635px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .program__prev {
+    left: 0;
+  }
+  .program__next {
+    right: 0;
+  }
+  .result__slider {
+    width: 445px;
+  }
+  .personal__slider {
+    width: 620px;
+  }
+  .info__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .calc__date {
+    width: 234px;
+  }
+  .calc__select {
+    width: 280px;
+  }
+  .news__list {
+    margin-top: 0;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .news__item {
+    margin-right: 0;
+  }
+  .footer__list {
+    font-size: 16px;
+  }
+  .footer__title {
+    font-size: 20px;
+  }
+  .footer__bottom {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .footer__column {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 766px) {
+  .logo {
+    width: 100%;
+    text-align: center;
+  }
+  .header__contacts {
+    padding-top: 10px;
+  }
+  .title {
+    font-size: 24px;
+  }
+  .pansion__info {
+    display: block;
+  }
+  .pansion__name {
+    width: 100%;
+    border-bottom: 1px solid #bcbcbc;
+  }
+  .pansion__contacts {
+    width: 100%;
+  }
+  .program__slider {
+    width: 315px;
+  }
+  .personal__slider {
+    width: 400px;
+  }
+  .catalog__wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .catalog__wrap p {
+    width: 80%;
+  }
+  .catalog__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+  }
+  .calc__title {
+    display: block;
+    text-align: center;
+  }
+  .calc__title p {
+    font-size: 24px;
+  }
+  .calc__dates,
+  .calc__select {
+    width: 100%;
+    margin-top: 10px;
+  }
+  .calc__options {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .calc__date {
+    width: 100%;
+  }
+  .calc__btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+  }
+  .footer__top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .footer__block {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 480px) {
+  .result__img,
+  .header__contacts,
+  .header__info {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .promo__title {
+    font-size: 30px;
+  }
+  .promo__title b {
+    font-size: 36px;
+  }
+  .pansion__price,
+  .pansion__title {
+    font-size: 20px;
+  }
+  .pansion__price span,
+  .pansion__title span {
+    font-size: 24px;
+  }
+  .info__item,
+  .result__slider,
+  .result__slide,
+  .program__slider,
+  .program__slide {
+    width: 300px;
+  }
+  .result__wrap {
+    display: block;
+  }
+  .info__img {
+    height: auto;
+  }
+  .catalog__wrap,
+  .info__block {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .info__btn {
+    margin-top: 5px;
+  }
+  .personal__slider {
+    width: 180px;
+  }
+  .catalog__wrap p {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: 0;
+    text-align: center;
+  }
+  .calc__block {
+    margin-bottom: 10px;
+    padding-left: 45px;
+  }
+  .footer__column {
+    width: auto;
+  }
+  .footer__bottom {
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
