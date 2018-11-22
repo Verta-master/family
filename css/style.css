@@ -1733,6 +1733,93 @@ button {
 .checkbox:checked + .checkbox__label::after {
   display: block;
 }
+.blog {
+  margin-bottom: 100px;
+  padding-top: 10px;
+}
+.blog__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  margin-top: 30px;
+}
+.blog__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 45px;
+}
+.blog__img {
+  width: 50%;
+  height: 315px;
+  padding-right: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.blog__img img {
+  display: block;
+}
+.blog__info {
+  width: 50%;
+  letter-spacing: 0.023em;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+.blog__info p {
+  margin: 0;
+}
+.blog__title {
+  display: block;
+  margin-bottom: 20px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+  line-height: 1.2;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.blog__title:hover,
+.blog__title:active {
+  color: #699c11;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.blog__link {
+  display: block;
+  margin-top: auto;
+  color: #699c11;
+  letter-spacing: 0.05em;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+.blog__link i {
+  font-size: 20px;
+}
+.blog__link:hover,
+.blog__link:active {
+  opacity: 0.8;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
 @media (max-width: 1200px) {
   .photo__prev {
     left: 0;
@@ -1920,6 +2007,24 @@ button {
   }
   .footer__block {
     margin-bottom: 10px;
+  }
+  .blog__item {
+    display: block;
+  }
+  .blog__img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  .blog__img img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .blog__info {
+    width: 100%;
+  }
+  .blog__link {
+    margin-top: 20px;
   }
 }
 @media (max-width: 480px) {
