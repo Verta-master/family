@@ -1,0 +1,140 @@
+.fancybox-is-open .fancybox-bg {
+  opacity: 0.66;
+}
+
+.fancybox-close-small {
+  padding: 0;
+  width: 60px;
+  height: 60px;
+  
+  svg {
+    stroke: @green;
+  }
+}
+
+.modal {
+  max-width: 456px;
+  padding: 30px 50px;
+  padding-top: 10px;
+  border-radius: 5px;
+}
+
+.modal__title {
+  margin: 0;
+  padding-bottom: 10px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+  color: @green;
+  text-align: center;
+  border-bottom: 1px solid #a9a9a9;
+}
+
+.modal__label {
+  display: block;
+  margin-top: 15px;
+  font-size: 18px;
+  letter-spacing: 0.09em;
+  color: #565656;
+  
+  span {
+    color: red;
+  }
+}
+
+.modal__input {
+  width: 100%;
+  height: 50px;
+  display: block;
+  padding-left: 20px;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.modal__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 5px;
+  
+  span {
+    color: #565656;
+  }
+}
+
+.modal__time {
+  width: 90px;
+  height: 45px;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding-left: 20px;
+  display: block;
+  color: @green;
+  letter-spacing: 0.09em;
+  border: 1px solid #a9a9a9;
+  border-radius: 5px;
+}
+
+.modal__comment {
+  margin-bottom: 30px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.09em;
+  
+  a {
+    color: @green;
+    text-decoration: underline;
+    
+    &:hover,
+    &:active {
+      text-decoration: none;
+    }
+  }
+}
+
+.modal__call {
+  margin-left: auto;
+  margin-right: auto;
+  
+  i {
+    transform: scaleX(-1);
+    margin-right: 10px;
+  }
+}
+
+.checkbox {
+  display: none;
+}
+
+.checkbox__label {
+  display: block;
+  padding-left: 30px;
+  position: relative;
+  
+  &::before {
+    content: "";
+    position: absolute;
+    top: 3px;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 5px;
+    border: 1px solid #a9a9a9;
+  }
+  
+  &::after {
+    display: none;
+    content: "\2714";
+    position: absolute;
+    top: 3px;
+    left: 2px;
+    color: @green;
+    font-size: 20px;
+    line-height: 1;
+  }
+}
+
+.checkbox:checked + .checkbox__label::after {
+  display: block;
+}
