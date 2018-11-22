@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: flex-start;
   padding-top: 30px;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   border-bottom: 1px solid rgba(255,255,255,0.58);
 }
 
@@ -22,19 +22,43 @@
 }
 
 .footer__title {
-  font-size: 24px;
+  margin-top: 0;
+  font-size: 22px;
 }
 
 .footer__list {
   .reset();
   list-style: none;
   font-size: 18px;
+  
+  i {
+    margin-right: 10px;
+    font-size: 22px;
+  }
+  
+  li {
+    &:hover,
+    &:active {
+      text-decoration: underline;
+    }
+  }
 }
 
 .footer__column {
   ul {
     .reset();
     list-style: none;
+    
+    li {
+      &:hover,
+      &:active {
+        text-decoration: underline;
+      }
+    }
+  }
+  
+  span {
+    letter-spacing: normal;
   }
 }
 
@@ -42,7 +66,7 @@
   padding-top: 10px;
   padding-bottom: 10px;
   background-color: #4c7603;
-  font-size: 13px;
+  font-size: 12px;
   
   p {
     margin: 0;
@@ -51,22 +75,31 @@
 
 .footer__phone {
   display: block;
+  padding-top: 5px;
+  margin-bottom: 5px;
   font-size: 20px;
   font-weight: 700;
+  letter-spacing: normal;
 }
 
 .footer__link {
-  margin-top: 15px;
+  margin-top: 10px;
   display: block;
   font-size: 17px;
   text-decoration: underline;
+  letter-spacing: 0.15em;
+  
+  &:hover,
+  &:active {
+    text-decoration: none;
+  }
 }
 
 .footer__call {
-  margin-top: 30px;
+  margin-top: 25px;
   width: 229px;
   height: 43px;
-  font-size: 18px;
+  font-size: 16px;
   color: #000;
   letter-spacing: 0.09em;
   background-color: #b7da7a;

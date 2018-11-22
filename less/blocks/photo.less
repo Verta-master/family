@@ -1,4 +1,10 @@
+.photo {
+  padding-top: 10px;
+}
+
 .photo__slider {
+  margin-top: 40px;
+  
   .swiper-slide {
     opacity: 0.21;
   }
@@ -17,7 +23,7 @@
 }
 
 .photo__link {
-  height: 280px;
+  height: 282px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -50,22 +56,22 @@
 
 .photo__prev,
 .photo__next {
-  width: 49px;
-  height: 49px;
-  top: 50%;
+  width: 70px;
+  height: 70px;
+  top: 48%;
   background-color: rgba(255,255,255,0.92);
   border-radius: 50%;
   background-image: url(../img/icon-arrow-green.png);
-  background-size: 17px 26px;
+  background-size: 25px auto;
   background-position: center;
   outline: none;
 }
 
 .photo__prev {
   transform: rotate(180deg);
-  left: ~"calc(50% - 545px)";
+  left: ~"calc(50% - 600px)";
 }
 
 .photo__next {
-  right: ~"calc(50% - 545px)";
+  right: ~"calc(50% - 600px)";
 }

@@ -1,6 +1,6 @@
 .calc {
   padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 37px;
   background-color: #b7da7a;
 }
 
@@ -14,11 +14,12 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  margin-bottom: 30px;
   
   p {
     margin: 0;
     font-family: "Roboto", "Arial", sans-serif;
-    font-size: 20px;
+    font-size: 30px;
     color: #223303;
     letter-spacing: 0.023em;
   }
@@ -26,7 +27,7 @@
 
 .calc__icon {
   position: relative;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
   
   i {
     position: absolute;
@@ -42,18 +43,40 @@
   width: 365px;
   height: 40px;
   padding: 0 10px;
-  font-size: 18px;
   border: 1px solid #bcbcbc;
   outline: none;
 }
 
 .calc__select {
   color: @pink;
+  margin-bottom: 5px;
+  appearance: none;
+  
+  &::-ms-expand {
+    color: transparent;
+    border: none;
+    background-color: transparent;
+  }
+}
+
+.calc__select-wrap {
+  position: relative;
+  z-index: 2;
+  
+  &::after {
+    content: "\f107";
+    position: absolute;
+    z-index: 5;
+    top: 10px;
+    right: 15px;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+  }
 }
 
 .calc__select-label {
   display: block;
-  font-size: 14px;
+  font-size: 15px;
   text-align: center;
 }
 
@@ -61,6 +84,7 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-top: 10px;
 }
 
 .calc__radio {
@@ -82,17 +106,21 @@
 .calc__label {
   position: relative;
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 28px;
   padding-left: 30px;
   font-size: 14px;
+  
+  &:last-of-type {
+    margin-bottom: 10px;
+  }
   
   &::before {
     content: "";
     position: absolute;
     top: 0;
     left: 0;
-    width: 20px;
-    height: 20px;
+    width: 24px;
+    height: 24px;
     border-radius: 50%;
     border: 1px solid #bcbcbc;
   }
@@ -101,8 +129,8 @@
     display: none;
     content: "";
     position: absolute;
-    top: 4px;
-    left: 4px;
+    top: 6px;
+    left: 6px;
     width: 12px;
     height: 12px;
     border-radius: 50%;
@@ -120,10 +148,10 @@
   padding-top: 10px;
   
   &--icons {
-    padding-left: 50px;
+    padding-left: 45px;
     background-image: url(../img/icons.png);
     background-repeat: no-repeat;
     background-size: 40px 150px;
-    background-position: left top;
+    background-position: left top 10px;
   }
 }
