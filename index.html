@@ -24,7 +24,7 @@
         <span>Режим работы: круглосуточно</span>
       </div>
       <div class="header__contacts">
-        <a href="#" class="btn header__call"><i class="fa fa-phone"></i> Перезвонить мне</a>
+        <a data-fancybox data-src="#call" href="javascript:;" class="btn header__call"><i class="fa fa-phone"></i> Перезвонить мне</a>
         <a href="#" class="header__link">Написать директору</a>
       </div>
     </div>
@@ -553,7 +553,7 @@
           <a href="tel:+74951234567" class="footer__phone">+7 (495) 123-45-67</a>
           <span>Ежедневно с 9-00 до  21-00</span>
           <a href="#" class="footer__link">Написать директору</a>
-          <a href="#" class="btn footer__call"><i class="fa fa-phone"></i> Перезвонить мне</a>
+          <a data-fancybox data-src="#call" href="javascript:;" class="btn footer__call"><i class="fa fa-phone"></i> Перезвонить мне</a>
         </div>
       </div>
     </div>
@@ -563,6 +563,28 @@
       </div>
     </div>
   </footer>
+  
+  <!-- Modal window -->
+  <div style="display: none;" id="call" class="modal">
+    <p class="modal__title">Заказать звонок</p>
+    <form action="#" class="modal__form">
+      <label for="name" class="modal__label">Ваше имя<span>*</span></label>
+      <input type="text" id="name" class="modal__input">
+      <label for="tel" class="modal__label">Ваш телефон<span>*</span></label>
+      <input type="tel" id="tel" class="modal__input">
+      <label class="modal__label">Удобное время для звонка</label>
+      <div class="modal__wrap">
+        <span>С</span>
+        <input type="text" id="from" class="modal__time" value="8:00">
+        <span>До</span>
+        <input type="text" id="to" class="modal__time" value="21:00">
+      </div>
+      <input type="checkbox" id="check" class="checkbox" required>
+      <label for="check" class="checkbox__label">Я не робот</label>
+      <p class="modal__comment">Нажимая кнопку “Перезвонить мне” Вы соглашаетесь с условиями <a href="#">Политики конфиденциальности</a></p>
+      <a href="#" class="btn modal__call"><i class="fa fa-phone"></i> Перезвонить мне</a>
+    </form>
+  </div>
   
   <script src="js/jquery-3.2.1.min.js"></script>
   <script src="js/script.js"></script>
