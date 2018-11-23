@@ -638,6 +638,9 @@ button {
   text-transform: uppercase;
   letter-spacing: 0.023em;
 }
+.title span {
+  color: #699c11;
+}
 .pansion__list {
   margin: 0;
   padding: 0;
@@ -1820,6 +1823,169 @@ button {
   -webkit-transition: ease-out 0.3s;
   transition: ease-out 0.3s;
 }
+.breadcrumbs {
+  padding-top: 17px;
+  padding-bottom: 10px;
+  font-size: 14px;
+  letter-spacing: 0.09em;
+}
+a.breadcrumbs__link {
+  position: relative;
+  color: #090a00;
+  margin-right: 25px;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.breadcrumbs__link i {
+  color: #84878b;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.breadcrumbs__link::after {
+  content: "";
+  position: relative;
+  top: 3px;
+  right: -10px;
+  width: 8px;
+  height: 13px;
+  display: inline-block;
+  background-image: url(../img/icon-arrow.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+a.breadcrumbs__link:hover,
+a.breadcrumbs__link:active {
+  color: #699c11;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+a.breadcrumbs__link:hover i,
+a.breadcrumbs__link:active i {
+  color: #699c11;
+  -webkit-transition: ease-out 0.3s;
+  transition: ease-out 0.3s;
+}
+span.breadcrumbs__link {
+  color: #699c11;
+}
+.article {
+  margin-bottom: 100px;
+}
+.article .title {
+  text-align: left;
+}
+.article__info {
+  margin-top: 30px;
+  position: relative;
+  border: 1px solid #bcbcbc;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.fotorama__thumb-border {
+  border-radius: 5px;
+}
+.fotorama__thumb {
+  border-radius: 5px;
+  overflow: hidden;
+}
+.fotorama__arr {
+  width: 73px;
+  height: 73px;
+  background-color: rgba(255, 255, 255, 0.92);
+  border-radius: 50%;
+  background-image: url(../img/icon-arrow-green.png);
+  background-size: 25px auto;
+  background-position: center;
+}
+.fotorama__arr--prev {
+  -webkit-transform: rotate(180deg) !important;
+          transform: rotate(180deg) !important;
+  left: 20px;
+}
+.fotorama__arr--next {
+  right: 20px;
+}
+.article__wrap {
+  margin-top: 20px;
+  margin-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.article__block {
+  width: 50%;
+  padding: 0 20px;
+  color: #545961;
+}
+.article__block p {
+  margin: 0;
+}
+.article__block:first-of-type {
+  border-right: 1px solid #bcbcbc;
+}
+.article__block--price {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 18px;
+  letter-spacing: 0.05em;
+}
+.article__block--price p {
+  margin-bottom: 15px;
+}
+.article__block--price span {
+  color: #b54f90;
+  font-size: 24px;
+}
+.article__block .article__title {
+  margin-bottom: 10px;
+}
+.article__title {
+  margin-top: 0;
+  margin-bottom: 5px;
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 33px;
+  line-height: 1.2;
+  letter-spacing: 0.023em;
+}
+.article__price {
+  font-family: "Roboto", "Arial", sans-serif;
+  font-size: 24px;
+}
+.article__btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 169px;
+  height: 43px;
+}
+.article__about {
+  padding-bottom: 20px;
+}
+.article__map {
+  width: 100%;
+  min-height: 370px;
+  margin-bottom: 15px;
+  background-image: url(../img/map-2.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.article__map iframe {
+  display: block;
+  width: 100%;
+  height: 480px;
+  border: 0;
+}
+.article__text {
+  color: #545961;
+}
+.article__text p {
+  margin-top: 0;
+}
 @media (max-width: 1200px) {
   .photo__prev {
     left: 0;
@@ -2026,6 +2192,18 @@ button {
   .blog__link {
     margin-top: 20px;
   }
+  .fotorama__arr {
+    width: 50px;
+    height: 50px;
+    background-size: 17px auto;
+  }
+  .article__wrap {
+    display: block;
+  }
+  .article__block {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
 @media (max-width: 480px) {
   .result__img,
@@ -2094,5 +2272,13 @@ button {
   .modal {
     padding-left: 15px;
     padding-right: 15px;
+  }
+  .pansion__vip {
+    padding: 5px 10px;
+    font-size: 18px;
+    top: 15px;
+  }
+  .article__title {
+    font-size: 24px;
   }
 }
